@@ -10,8 +10,9 @@ public abstract class Estudiante {
     private double notas;
     private ArrayList<ProgramaAcademico> listaProgramasAcademocos;
     private ArrayList<Materia> listaMateria;
+    private Carrera OwnedByCarrera;
 
-    public Estudiante(String identificacion, String nombre, String documentoIdentidad, String semestreActual, double notas) {
+    public Estudiante(String identificacion, String nombre, String documentoIdentidad, String semestreActual, double notas, Carrera OwnedByCarrera) {
         this.identificacion = identificacion;
         this.nombre = nombre;
         this.documentoIdentidad = documentoIdentidad;
@@ -19,6 +20,7 @@ public abstract class Estudiante {
         this.notas = notas;
         this.listaProgramasAcademocos = new ArrayList<>();
         this.listaMateria = new ArrayList<>();
+        this.OwnedByCarrera = OwnedByCarrera;
     }
 
     public String getIdentificacion() {
@@ -74,6 +76,12 @@ public abstract class Estudiante {
 
     public void setListaMateria(ArrayList<Materia> listaMateria) {
         this.listaMateria = listaMateria;
+    }
+    public Carrera getOwnedByCarrera() {
+        return OwnedByCarrera;
+    }
+    public void setOwnedByCarrera(Carrera OwnedByCarrera) {
+        this.OwnedByCarrera = OwnedByCarrera;
     }
 
 }

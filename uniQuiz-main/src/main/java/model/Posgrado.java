@@ -4,8 +4,8 @@ public class Posgrado extends Estudiante {
     private String seminario;
     private PregradoOPosgrado tipoGrado;
 
-    public Posgrado(String identificacion, String nombre, String documentoidentidad, String semestreActual, double notas, String seminario, PregradoOPosgrado tipoGrado) {
-        super(identificacion, nombre, documentoidentidad, semestreActual, notas);
+    public Posgrado(String identificacion, String nombre, String documentoIdentidad, String semestreActual, double notas, Carrera OwnedByCarrera, String seminario, PregradoOPosgrado tipoGrado) {
+        super(identificacion, nombre, documentoIdentidad, semestreActual, notas, OwnedByCarrera);
         this.tipoGrado = tipoGrado;
         this.seminario = seminario;
     }

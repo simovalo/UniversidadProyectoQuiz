@@ -1,14 +1,19 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class Carrera {
     private String nombre;
     private ArrayList<Materia> listaMaterias;
+    private ArrayList<Estudiante> listaEstudiantes;
+    private ArrayList<Profesor> listaProfesores;
 
     public Carrera(String nombre) {
         this.nombre = nombre;
         this.listaMaterias = new ArrayList<>();
+        this.listaEstudiantes = new ArrayList<>();
+        this.listaProfesores = new ArrayList<>();
     }
 
     public ArrayList<Materia> getListaMateria() {
@@ -26,6 +31,19 @@ public class Carrera {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    public ArrayList<Estudiante> getListaEstudiantes() {
+        return listaEstudiantes;
+    }
+    public void setListaEstudiantes(ArrayList<Estudiante> listaEstudiantes) {
+        this.listaEstudiantes = listaEstudiantes;
+    }
+    public ArrayList<Profesor> getListaProfesores() {
+        return listaProfesores;
+    }
+    public void setListaProfesores(ArrayList<Profesor> listaProfesores) {
+        this.listaProfesores = listaProfesores;
+    }
+
 
     // 1. Agregar materia a la carrera
     public void addMateria(Materia m) {
@@ -108,4 +126,12 @@ public class Carrera {
             listaMaterias.add(m);
         }
     }
+    // desarrollar un metodo que obtenga los profesores que tienen mas de 2 años de experiencia que sean de planta
+    public ArrayList<Profesor> obtenerProfesoresConMasDeDosAñosDeExperiencia() {
+        return listaProfesores.stream()
+                .filter(p -> p instanceof ProfesorPlanta && p != null && p.getAñosDeExperiencia() > 2)
+                .distinct()
+                .collect(Collectors.toCollection(ArrayList::new));
+    }
+
 }

@@ -3,8 +3,8 @@ package model;
 public class ProfesorPlanta extends Profesor {
     private Dedicacion tipoDedicacion;
 
-    public ProfesorPlanta(String nombre, String id, String titulo, int añosDeExperiencia, Dedicacion tipoDedicacion) {
-        super(nombre, id, titulo, añosDeExperiencia);
+    public ProfesorPlanta(String nombre, String id, String titulo, int añosDeExperiencia, Carrera OwnedByCarrera, Dedicacion tipoDedicacion) {
+        super(nombre, id, titulo, añosDeExperiencia, OwnedByCarrera);
         this.tipoDedicacion = tipoDedicacion;
     }
 

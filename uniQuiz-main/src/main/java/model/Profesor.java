@@ -8,13 +8,15 @@ public abstract class Profesor {
     private String tituloAcademico;
     private int añosDeExperiencia;
     private ArrayList<Materia> listaMateria;
+    private Carrera OwnedByCarrera;
 
-    public Profesor(String identificador, String nombre, String tituloAcademico, int añosDeExperiencia) {
+    public Profesor(String identificador, String nombre, String tituloAcademico, int añosDeExperiencia, Carrera OwnedByCarrera) {
         this.identificador = identificador;
         this.nombre = nombre;
         this.tituloAcademico = tituloAcademico;
         this.añosDeExperiencia = añosDeExperiencia;
         this.listaMateria = new ArrayList<>();
+        this.OwnedByCarrera = OwnedByCarrera;
     }
 
     public String getIdentificador() {
@@ -55,5 +57,11 @@ public abstract class Profesor {
 
     public void setListaMateria(ArrayList<Materia> listaMateria) {
         this.listaMateria = listaMateria;
+    }
+    public Carrera getOwnedByCarrera() {
+        return OwnedByCarrera;
+    }
+    public void setOwnedByCarrera(Carrera OwnedByCarrera) {
+        this.OwnedByCarrera = OwnedByCarrera;
     }
 }

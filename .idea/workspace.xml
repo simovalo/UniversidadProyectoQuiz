@@ -11,8 +11,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/uniQuizCompleto" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "simovalo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/simovalo/uniQuizCompleto.git",
+    "accountId": "af9c8714-d8d0-405e-9491-8b885921c266"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -79,7 +91,7 @@
       <workItem from="1758832661584" duration="1929000" />
       <workItem from="1759159669849" duration="18000" />
       <workItem from="1759238812346" duration="674000" />
-      <workItem from="1759260411936" duration="683000" />
+      <workItem from="1759260411936" duration="1111000" />
     </task>
     <servers />
   </component>

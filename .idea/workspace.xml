@@ -8,11 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Carrera.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Carrera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Estudiante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Posgrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Posgrado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Pregrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Pregrado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/ProfesorCatedra.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/ProfesorCatedra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/ProfesorPlanta.java" beforeDir="false" afterPath="$PROJECT_DIR$/uniQuiz-main/src/main/java/model/ProfesorPlanta.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +97,7 @@
       <workItem from="1759159669849" duration="18000" />
       <workItem from="1759238812346" duration="674000" />
       <workItem from="1759260411936" duration="4337000" />
-      <workItem from="1759270516052" duration="2384000" />
+      <workItem from="1759270516052" duration="3234000" />
     </task>
     <servers />
   </component>

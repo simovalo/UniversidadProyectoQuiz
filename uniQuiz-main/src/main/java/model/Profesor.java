@@ -10,7 +10,7 @@ public abstract class Profesor {
     private ArrayList<Materia> listaMateria;
     private Carrera OwnedByCarrera;
 
-    public Profesor(String identificador, String nombre, String tituloAcademico, int añosDeExperiencia, Carrera OwnedByCarrera) {
+    public Profesor(String nombre, String identificador, String tituloAcademico, int añosDeExperiencia, Carrera OwnedByCarrera) {
         this.identificador = identificador;
         this.nombre = nombre;
         this.tituloAcademico = tituloAcademico;

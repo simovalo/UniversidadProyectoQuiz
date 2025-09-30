@@ -8,7 +8,8 @@ public class Main {
         Carrera carrera = new Carrera("Ingeniería de Sistemas");
 
         // aqui creaamos un profe
-        Profesor profesor = new ProfesorPlanta("P001", "Carlos Perez", "PhD en CS", 10, carrera, Dedicacion.COMPLETO);
+        Profesor profesor = new ProfesorPlanta("Carlos Pérez", "P001", "Ingeniero de Sistemas", 5, carrera, Dedicacion.COMPLETO);
+        carrera.getListaProfesores().add(profesor);
 
         // en esta creamos materias
         MateriaTeorica mt = new MateriaTeorica("Programación I", "M001", 6, 3, "1", carrera, profesor);
@@ -50,7 +51,7 @@ public class Main {
 
         // Consultar profesores con más de 2 años de experiencia
         System.out.println("Profesores con más de 2 años de experiencia:");
-        for (Profesor p : carrera.obtenerProfesoresConMasDeDosAñosDeExperiencia()) {
+        for (Profesor p : carrera.obtenerProfesoresConMasDeDosAniosDeExperiencia()) {
             System.out.println("- " + p.getNombre());
         }
     }

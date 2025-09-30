@@ -15,4 +15,5 @@ public class ProfesorPlanta extends Profesor {
     public void setTipoDedicacion(Dedicacion tipoDedicacion) {
         this.tipoDedicacion = tipoDedicacion;
     }
+
 }

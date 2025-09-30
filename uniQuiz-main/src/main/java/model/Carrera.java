@@ -1,7 +1,6 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 public class Carrera {
     private String nombre;
@@ -127,11 +126,15 @@ public class Carrera {
         }
     }
     // desarrollar un metodo que obtenga los profesores que tienen mas de 2 años de experiencia que sean de planta
-    public ArrayList<Profesor> obtenerProfesoresConMasDeDosAñosDeExperiencia() {
-        return listaProfesores.stream()
-                .filter(p -> p instanceof ProfesorPlanta && p != null && p.getAñosDeExperiencia() > 2)
-                .distinct()
-                .collect(Collectors.toCollection(ArrayList::new));
+    public ArrayList<Profesor> obtenerProfesoresConMasDeDosAniosDeExperiencia() {
+        ArrayList<Profesor> resultado = new ArrayList<>();
+        for (Profesor p : listaProfesores) {
+            if (p!= null && p.getAñosDeExperiencia() > 2 && p instanceof ProfesorPlanta) {
+                if(!resultado.contains(p)) {
+                    resultado.add(p);
+                }
+            }
+        }
+        return resultado;
     }
-
 }
